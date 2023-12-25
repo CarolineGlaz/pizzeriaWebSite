@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Karla:wght@300&family=Lexend&family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.logo {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.navbar {
+    background-color: #D95F5F;
+    padding-bottom: 70px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+
+.navbar a:hover,
+.scroll a:hover,
+.enSavoirPlus:hover,
+.savoirPlus a:hover,
+.faitmaison a.decouvrirCarte {
+    transform: scale(1.1);
+}
+
+
+.navbar a:last-child {
+    background-color: #ffca67;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+/* BODY */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 2%;
+}
+
+.pizza-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+  .pizza-card h2{
+    font-family: 'Lexend', sans-serif;
+
+  }
+
+  .pizza-card {
+    font-family: 'Karla', sans-serif;
+
+  }
+  
+  .pizza-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .pizza-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .pizza-details {
+    padding: 20px;
+  }
+  
+  .prix {
+    font-weight: bold;
+    color: #D95F5F;
+  }
+  
+  .button {
+    background-color: #D95F5F;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #a24646;
+  }
+
+  /* FOOTER */
+
+.footer {
+    background-color: #08A696;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 16px;
+    text-align: center;
+}
+
+.footer a {
+    color: rgb(255, 255, 255);
+    font-family: 'Karla', sans-serif;
+    margin-left: 15px;
+}

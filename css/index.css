@@ -1,0 +1,657 @@
+/* =========================================================================
+S GENERAUX
+   ========================================================================= */
+
+   @import url('https://fonts.googleapis.com/css2?family=Karla&family=Kumbh+Sans&family=Italianno&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lobster+Two&display=swap');
+   
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       list-type: none;
+       text-decoration: none;
+   }
+   
+/* =========================================================================
+    HEADER
+   ========================================================================= */
+   
+   /* Logo */
+   .logo {
+       border-radius: 50%;
+       height: 50px;
+       width: 50px;
+       margin: 1%;
+   }
+
+    /* log */
+      .navbar img {
+        display: block;
+        float: left;
+        margin-right: 15px;
+    }
+   
+   /* Barre de navigation */
+   .navbar {
+       background-color: #D95F5F;
+       overflow: hidden;
+       font-family: 'Karla', sans-serif;
+   }
+   
+   /* Lien */
+   .navbar a {
+       float: left;
+       color: white;
+       text-align: center;
+       margin: 2% 2%;
+       transition: transform 0.3s ease-in-out;
+   }
+   
+   /* Liens "nous contacter */
+   .navbar a.right {
+       float: right;
+       background-color: #ffca67;
+       border-radius: 50px;
+       padding: 10px 20px;
+       transition: transform 0.3s ease-in-out;
+       margin-top: 1%;
+   }
+   
+   /* Effet de survol*/
+   .navbar a:hover,
+   .scroll a:hover,
+   .enSavoirPlus:hover,
+   .histoireFamille a,
+   .faitmaison a.decouvrirCarte {
+       transform: scale(1.1);
+   }
+   
+/* =========================================================================
+    BODY
+   ========================================================================= */
+   
+   /* logo "chez Jonathan pizzeria*/
+   .title {
+       text-align: center;
+   }
+   
+/* =========================================================================
+    SCROLL
+   ========================================================================= */
+   
+   /* Conteneur*/
+   .scroll {
+       display: flex;
+   }
+   
+   /* Les carrés */
+   .carre {
+       background-color: #FFF8E5;
+       margin-left: 2%;
+       padding: 2%;
+   }
+   
+   /* Liens "lire la suite"  */
+   .carre a {
+       background-color: #08A696;
+       border-radius: 50px;
+       text-align: center;
+       padding: 7px;
+       display: block;
+       margin: 5% 7%;
+       color: white;
+       font-family: 'Karla', sans-serif;
+       transition: transform 0.3s ease-in-out;
+   }
+   
+   /* Titre "La pizza du moment" */
+   .scroll h2 {
+       text-align: center;
+       font-size: 27px;
+       font-family: 'Kumbh Sans', sans-serif;
+       color: #D95F5F;
+       font-weight: bold;
+   }
+   
+   /* Paragraphe */
+   .scroll p {
+       text-align: center;
+       font-family: 'Karla', sans-serif;
+   }
+   
+   /* Flèches */
+   .flechecroll{
+       display: inline-block;
+       margin: 5% 1%;
+   }
+   
+/* =========================================================================
+    HISTOIRE DE FAMILLE
+   ========================================================================= */
+   
+   /* Arrière-plan */
+   .background {
+       margin-top: 3%;
+       background-color: #DB5C5C ;
+       height: 516px;
+       overflow: hidden;
+   }
+
+      /* Titre "Une histoire de famille 1er enfant "Une histoire" */
+      .titreFamille {
+        color: white;
+        font-family: 'Italianno', cursive;
+        font-size: 70px;
+        margin-top: 4%;
+        margin-left: 3%;
+    }
+
+       /* Deuxième ligne du titre "de famille . . ." */
+   .titreFamille p:last-child {
+    font-size: 70px;
+    margin-top: -30px;
+    margin-left: 5%;
+}
+   
+   /* Paragraphe */
+   .paragraphe {
+       font-family: 'Karla', sans-serif;
+       width: 50%;
+       text-align: justify;
+       font-size: 17px;
+       line-height: 1.6;
+       margin: 2%;
+   }
+   
+   /* Conteneur avec paragraphe et cercle */
+   .paragraphe-avec-cercle {
+       display: flex;
+       align-items: center;
+   }
+   
+   /* Cercle de fond pour la photo */
+   .cercle {
+       background-color: #FFF8E5;
+       border-radius: 50%;
+       padding: 1%;
+       width: 330px;
+       position: absolute;
+       margin-left: 64%;
+       margin-bottom: 8%;
+   }
+   
+   /* Image qui se trouve dans le cercle */
+   .cercle img {
+       max-width: 100%;
+       max-height: 100%;
+       border-radius: 50%;
+   }
+   
+   /* Lien "En savoir plus" */
+   .histoireFamille a {
+       background-color: rgb(255, 202, 103);
+       padding: 15px 30px;
+       border-radius: 50px;
+       font-family: Karla, sans-serif;
+       font-weight: bold;
+       color: black;
+       transition: transform 0.3s ease-in-out 0s;
+       margin-left: 30%;
+   }
+   
+/* =========================================================================
+    FAIT MAISON
+   ========================================================================= */
+   
+   /* Arrière-plan */
+   .faitmaison {
+       background-image: url(../assets/background/backfaitmaison.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center center;
+       width: 100%;
+       height: 600px;
+       overflow: hidden;
+   }
+   
+   /* Titre "Nos pizzas sont" */
+   .titleFaitMaison {
+       font-family: 'Lobster Two', sans-serif;
+       font-size: 70px;
+       color: #4C291E;
+       margin-top: 5%;
+       float: right;
+       margin-right: 7%;
+   }
+   
+   /* Deuxième ligne du titre "faites maison" */
+   .titleFaitMaison p:last-child {
+       font-family: 'Lobster Two', sans-serif;
+       color: #DB5C5C;
+   }
+   
+   /* Image pizzeria */
+   .imgFaitMaison {
+       height: 150px;
+       width: 400px;
+       margin-top: 7%;
+       margin-left: 5%;
+   }
+   
+   /* Paragraphe */
+   .paragrapheFaitMaison {
+       font-family: 'Karla', sans-serif;
+       width: 50%;
+       text-align: justify;
+       font-size: 17px;
+       line-height: 1.6;
+       margin-left: 5%;
+   }
+   
+   /* Logo fait maison */
+   .logoFaitMaison {
+       border-radius: 50%;
+       float: right;
+       margin-bottom: 30%;
+       height: 150px;
+       width: 150px;
+       margin-right: 5%;
+   }
+   
+   /* Lien "découvrir notre carte" */
+   .faitmaison a.DecouvrirCarte {
+       background-color: rgb(219, 92, 92);
+       padding: 15px 30px;
+       border-radius: 50px;
+       font-family: Karla, sans-serif;
+       font-weight: bold;
+       color: white;
+       margin-left: 30%;
+       transition: transform 0.3s ease-in-out 0s;
+       margin: 6%;
+       position: absolute;
+   }
+   
+   /* Effet de survol */
+   .faitmaison a.DecouvrirCarte:hover,
+   .commande a:hover {
+       transform: scale(1.1);
+   }
+   
+/* =========================================================================
+      COMMENTAIRES
+   ========================================================================= */
+   
+   /* Titre "Ils nous ont fait confiance" */
+   .titreCommentaire {
+       text-align: center;
+       font-size: 70px;
+       font-family: 'Italianno', cursive;
+       color: #D95F5F;
+   }
+   
+   /* Conteneur */
+   .commentaires {
+       background-color: orange;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 35vh;
+   }
+   
+   /* Conteneur principal des commentaires */
+   .comments-container {
+       display: flex;
+       flex-direction: row;
+       font-family: 'Karla', sans-serif;
+       font-weight: bolder;
+   }
+   
+   /* Bulle de commentaire */
+   .comment-bubble {
+       position: relative;
+       max-width: 250px;
+       background-color: #fff;
+       padding: 30px;
+       border-radius: 30px;
+       text-align: center;
+       margin-right: 20px;
+   }
+   
+   /* Triangle pour la pointe de la bulle de commentaire */
+   .comment-bubble::before {
+       content: "";
+       position: absolute;
+       top: 97%;
+       left: 20%;
+       margin-left: -22px;
+       border-width: 21px;
+       border: solid;
+       border-color: #fff transparent transparent transparent;
+   }
+   
+   /* Informations sur l'auteur du commentaire */
+   .auteur-info {
+       display: flex;
+       align-items: center;
+       margin-left: 15%;
+       margin-top: 10%;
+   }
+   
+   /* Image de l'auteur du commentaire */
+   .auteur-image {
+       width: 45px;
+       height: 45px;
+       border-radius: 50%;
+       margin-right: 10px;
+       margin-left: -5%;
+   }
+   
+   /* Nom de l'auteur du commentaire */
+   .auteur-name {
+       margin: 0;
+       font-weight: bold;
+       font-size: 18px;
+   }
+   
+   /* Flèche */
+   .flecheComment {
+       height: 60px;
+       width: 60px;
+       margin-top: 4%;
+   }
+
+/* =========================================================================
+    LIVRAISON À DOMICILE
+   ========================================================================= */
+
+/* Conteneur*/
+.foot {
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Titre "On vous livre chez vous !" */
+.livreChezVous {
+    color: #7D6A6D;
+    font-family: 'Italianno', cursive;
+    font-size: 80px;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+/* 2eme partie du titre "chez vous !" */
+.livreChezVous p:last-child {
+    color: #06A19D;
+    font-size: 80px;
+    margin-top: -30px;
+    margin-left: 8%;
+}
+
+/* Contenir l'image des vivreurs à droite de l'image */
+.livreChezVous {
+    float: left;
+}
+
+/* Conteneur des logos */
+.logos {
+    display: flex;
+    margin-top: -4%;
+    margin-left: 4%;
+}
+
+/* Logos */
+.logos img {
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin: 1.5rem;
+}
+
+/* Lien "Ou commandez sur notre site ! */
+.commande a {
+    background-color: #D95F5F;
+    border-radius: 50px;
+    padding: 10px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    transition: transform 0.3s ease-in-out;
+    display: inline-table;
+    margin-bottom: 2%;
+}
+
+
+/* =========================================================================
+    FOOTER
+   ======================================================================== */
+   
+   /* Pied de page général */
+   .footer {
+       background-color: #08A696;
+       bottom: 0;
+       width: 100%;
+       padding: 30px 16px;
+       text-align: center;
+   }
+   
+   /* Liens dans le pied de page */
+   .footer a {
+       color: rgb(255, 255, 255);
+       font-family: 'Karla', sans-serif;
+       margin-left: 15px;
+   }
+
+/* =========================================================================
+   MEDIA QUERY POUR ÉCRANS INFÉRIEURS À 700PX
+   ========================================================================= */
+
+   @media (max-width: 700px) {
+
+    /* -----NAVBAR----- */
+    .navbar {
+        padding-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Logo */
+    .logo {
+        margin: 10px 0;
+    }
+
+    /* Lien */
+    .navbar a {
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 5px;
+    }
+
+    /* Liens "nous contacter  */
+    .navbar a.right {
+        float: none;
+        margin-top: 5px;
+    }
+
+    /* -----HEADER----- */
+    .logo {
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+    }
+
+    /* -----NAVBAR----- */
+    .navbar {
+        background-color: #D95F5F;
+        padding-bottom: 70px;
+        font-family: 'Karla', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar a {
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        transition: transform 0.3s ease-in-out;
+        font-weight: bold;
+    }
+
+    .navbar img {
+        display: block;
+        margin-right: 15px;
+    }
+
+    /* -----SCROLL----- */
+    .scroll {
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+    }
+
+    /* Carré */
+    .carre {
+        margin-left: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* Liens dans les carrés */
+    .carre a {
+        width: 80%;
+        margin: 5% 10%;
+    }
+
+    /* Image (masquée) */
+    .scroll img {
+        display: none;
+    }
+
+    /* -----HISTOIRE DE FAMILLE----- */
+    .background {
+        height: 550px;
+    }
+
+    /* Titre */
+    .titreFamille {
+        text-align: center;
+    }
+
+    /* Paragraphe */
+    .paragraphe {
+        width: 80%;
+        text-align: justify;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    /* Conteneur de paragraphe */
+    .paragraphe-avec-cercle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cercle (masqué) */
+    .cercle {
+        display: none;
+    }
+
+    /* Lien "en savoir plus" */
+    .histoireFamille a {
+        position: absolute;
+        margin-top: 3%;
+    }
+
+    /* -----COMMENTAIRES----- */
+    .comments-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Commentaires */
+    .comment {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Informations de l'auteur */
+    .auteur-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Conteneur des commentaires (hauteur augmentée) */
+    .commentaires {
+        height: 120vh;
+    }
+
+    /* Flèche des commentaires (masquée) */
+    .flecheComment {
+        display: none;
+        padding: 0;
+    }
+
+    /* -----NOS PIZZAS FAITES MAISON----- */
+    .imgFaitMaison {
+        margin-left: 10%;
+    }
+
+    /* Titre "nos pizzas"*/
+    .titleFaitMaison {
+        margin-right: 10%;
+    }
+
+    /*2eme partie du titre "sont faites maison" (marge à gauche) */
+    .titleFaitMaison p:last-child {
+        margin-left: 10%;
+    }
+
+    /* Paragraphe */
+    .paragrapheFaitMaison {
+        text-align: center;
+        margin-left: 25%;
+    }
+
+    /* Section fait maison (hauteur augmentée) */
+    .faitmaison {
+        height: 750px;
+    }
+
+    /* Lien "Découvrir la carte" dans fait maison */
+    .faitmaison a.DecouvrirCarte {
+        margin-top: 20%;
+        margin-left: 13%;
+    }
+
+    /* Logo (marge en haut) */
+    .logoFaitMaison {
+        margin-top: 10%;
+    }
+
+    /* -----ON VOUS LIVRE CHEZ VOUS----- */
+
+    /* Titre "on vous livre chez vous !" */
+    .livreChezVous,
+    .imageLivreurs {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    /* 2eme partie du titre "Chez vous !" */
+    .livreChezVous p:last-child {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /* Logos des livreurs */
+    .logos {
+        width: 0;
+        margin: 1rem;
+        display: flex;
+    }
+}
